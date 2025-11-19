@@ -206,14 +206,19 @@ const PastPresent = () => {
                 <span className="text-scapegoat font-bold text-xl">3.</span>
                 <span className="text-bluetext">The Past recreates your <strong>initial moves</strong> prior to its appearance, moving simultaneously with the Present.</span>
               </p>
-              
-              <p className="flex items-start gap-3">
+
+               <p className="flex items-start gap-3">
                 <span className="text-scapegoat font-bold text-xl">4.</span>
-                <span className="text-bluetext">Only your past can access the <strong className="text-orange-400">orange</strong> button to unlock the Gate.</span>
+                <span className="text-bluetext">The Past will <strong>stop moving</strong> after the initial moves have been recreated.</span>
               </p>
               
               <p className="flex items-start gap-3">
                 <span className="text-scapegoat font-bold text-xl">5.</span>
+                <span className="text-bluetext">Only your past can access the <strong className="text-orange-400">orange</strong> button to unlock the Gate.</span>
+              </p>
+              
+              <p className="flex items-start gap-3">
+                <span className="text-scapegoat font-bold text-xl">6.</span>
                 <span className="text-bluetext">Reach the 🏆<strong className="text-turquoise">Goal</strong> to complete the Level.</span>
               </p>
               
