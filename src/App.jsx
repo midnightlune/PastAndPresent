@@ -1,70 +1,71 @@
 import React, { useState, useEffect } from 'react';
 
 const PastPresent = () => {
-  const levels = [
-    {
-      grid: [
-        ['plat', 'plat','plat', 'toggle','plat',null,'plat'],
-        ['plat', null,null, 'plat', 'plat', 'gate', 'goal'],
-        [null,null,null,'plat','plat',null,null],
-        ['plat','plat',null,null,null,null,null]
-      ],
-      startPos: { x: 0, y: 0 },
-      goalPos: { x: 6, y: 1 },
-      pastSpawnIn: 3,
-      pastToggle: { x: 3, y: 0 },
-      pastgate: { x: 5, y: 1 }
-    },
-       {
-      grid: [
-        ['plat', 'plat','plat', 'toggle','plat',null,'plat'],
-        ['plat', null,null, 'plat', 'plat', 'gate', 'goal']
-      ],
-      startPos: { x: 0, y: 0 },
-      goalPos: { x: 6, y: 1 },
-      pastSpawnIn: 3,
-      pastToggle: { x: 3, y: 0 },
-      pastgate: { x: 5, y: 1 }
-    },
-      grid: [
-        ['plat', 'plat', 'plat', 'plat', null, null],
-        ['plat', null, null, 'plat', null, null],
-        ['plat', 'plat', null, 'toggle', null, 'plat'],
-        [null, 'plat', 'plat', 'plat', 'gate', 'goal']
-      ],
-      startPos: { x: 0, y: 0 },
-      goalPos: { x: 5, y: 3 },
-      pastSpawnIn: 7,
-      pastToggle: { x: 3, y: 2 },
-      pastgate: { x: 4, y: 3 }
-    },
-    {
-      grid: [
-        ['plat', null, null, 'plat', 'plat', 'plat', null],
-        ['plat', 'plat', null, 'plat', null, 'gate', 'goal'],
-        [null, 'plat', 'plat', 'toggle', 'plat', 'plat', null],
-        [null, null, 'plat', 'plat', 'plat', null, null]
-      ],
-      startPos: { x: 0, y: 0 },
-      goalPos: { x: 6, y: 1 },
-      pastSpawnIn: 9,
-      pastToggle: { x: 3, y: 2 },
-      pastgate: { x: 5, y: 1 }
-    },
-    {
-      grid: [
-        [null, null,'plat', 'plat', null, null,'plat'],
-        ['plat', 'gate', 'plat', 'plat', 'plat', 'plat', 'plat'],
-        ['plat', 'plat', null, null,null, 'plat', null],
-        ['goal', null, 'plat', 'plat', 'plat', 'plat', 'toggle']
-      ],
-      startPos: { x: 2, y: 0 },
-      goalPos: { x: 0, y: 3 },
-      pastSpawnIn: 7,
-      pastToggle: { x: 6, y: 3 },
-      pastgate: { x: 2, y: 1 }
-    }
-  ];
+ const levels = [
+  {
+    grid: [
+      ['plat', 'plat','plat', 'toggle','plat',null,'plat'],
+      ['plat', null,null, 'plat', 'plat', 'gate', 'goal'],
+      [null,null,null,'plat','plat',null,null],
+      ['plat','plat',null,null,null,null,null]
+    ],
+    startPos: { x: 0, y: 0 },
+    goalPos: { x: 6, y: 1 },
+    pastSpawnIn: 3,
+    pastToggle: { x: 3, y: 0 },
+    pastgate: { x: 5, y: 1 }
+  },
+  {
+    grid: [
+      ['plat', 'plat','plat', 'toggle','plat',null,'plat'],
+      ['plat', null,null, 'plat', 'plat', 'gate', 'goal']
+    ],
+    startPos: { x: 0, y: 0 },
+    goalPos: { x: 6, y: 1 },
+    pastSpawnIn: 3,
+    pastToggle: { x: 3, y: 0 },
+    pastgate: { x: 5, y: 1 }
+  },
+  {
+    grid: [
+      ['plat', 'plat', 'plat', 'plat', null, null],
+      ['plat', null, null, 'plat', null, null],
+      ['plat', 'plat', null, 'toggle', null, 'plat'],
+      [null, 'plat', 'plat', 'plat', 'gate', 'goal']
+    ],
+    startPos: { x: 0, y: 0 },
+    goalPos: { x: 5, y: 3 },
+    pastSpawnIn: 7,
+    pastToggle: { x: 3, y: 2 },
+    pastgate: { x: 4, y: 3 }
+  },
+  {
+    grid: [
+      ['plat', null, null, 'plat', 'plat', 'plat', null],
+      ['plat', 'plat', null, 'plat', null, 'gate', 'goal'],
+      [null, 'plat', 'plat', 'toggle', 'plat', 'plat', null],
+      [null, null, 'plat', 'plat', 'plat', null, null]
+    ],
+    startPos: { x: 0, y: 0 },
+    goalPos: { x: 6, y: 1 },
+    pastSpawnIn: 9,
+    pastToggle: { x: 3, y: 2 },
+    pastgate: { x: 5, y: 1 }
+  },
+  {
+    grid: [
+      [null, null,'plat', 'plat', null, null,'plat'],
+      ['plat', 'gate', 'plat', 'plat', 'plat', 'plat', 'plat'],
+      ['plat', 'plat', null, null,null, 'plat', null],
+      ['goal', null, 'plat', 'plat', 'plat', 'plat', 'toggle']
+    ],
+    startPos: { x: 2, y: 0 },
+    goalPos: { x: 0, y: 3 },
+    pastSpawnIn: 7,
+    pastToggle: { x: 6, y: 3 },
+    pastgate: { x: 2, y: 1 }
+  }
+];
 
   const [currentLvl, setcurrentLvl] = useState(0);
   const [gameScreen, setGameScreen] = useState('rules'); // 'rules', 'selectLevel', 'playing'
