@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 const PastPresent = () => {
   const levels = [
     {
-      {
       grid: [
         ['plat', 'plat','plat', 'toggle','plat',null,'plat'],
         ['plat', null,null, 'plat', 'plat', 'gate', 'goal'],
