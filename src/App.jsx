@@ -17,17 +17,6 @@ const PastPresent = () => {
   },
   {
     grid: [
-      ['plat', 'plat','plat', 'toggle','plat',null,'plat'],
-      ['plat', null,null, 'plat', 'plat', 'gate', 'goal']
-    ],
-    startPos: { x: 0, y: 0 },
-    goalPos: { x: 6, y: 1 },
-    pastSpawnIn: 3,
-    pastToggle: { x: 3, y: 0 },
-    pastgate: { x: 5, y: 1 }
-  },
-  {
-    grid: [
       ['plat', 'plat', 'plat', 'plat', null, null],
       ['plat', null, null, 'plat', null, null],
       ['plat', 'plat', null, 'toggle', null, 'plat'],
